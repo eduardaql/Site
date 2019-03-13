@@ -2,11 +2,28 @@
 <html lang="en-US">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <body>
+	<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<h1> Preencha os dados abaixo 
+<div ng-app="">
+  <p>Nome completo: <input type="text" ng-model="name"></p>
+  <h1>Seu nome é: {{name}}</h1>
+</div>
 
 <div ng-app="">
-  <p>Name : <input type="text" ng-model="name"></p>
-  <h1>Hello {{name}}</h1>
+  <p>Idade: <input type="text" ng-model="age"></p>
+  <h1>Sua idade é: {{age}}</h1>
 </div>
+
+<div ng-app="">
+  <p>Cidade: <input type="text" ng-model="city"></p>
+  <h1>Sua cidade é: {{city}}</h1>
+</div>
+
+<p>O que vc preencheu foram seus dados pessoas, dado pessoal é aquele “dado relacionado à pessoa natural identificada ou identificável, dados locacionais ou identificadores eletrônicos”. Ou seja, datas de aniversários, endereços, senhas, descrições de perfil são exemplos de informações que pertencem a você. </p>
+
 
 </body>
 </html>
